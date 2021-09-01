@@ -1,0 +1,30 @@
+.aside {
+    margin: .5rem 0;
+    padding: 1rem 0;
+    background-color: #ffffff
+}
+
+.title {
+    margin: 0 0 .5rem .6rem;
+    font-size: 1.2rem;
+}
+
+.title span {
+    margin: 0 .5rem;
+}
+
+.item {
+    margin: .5rem 1rem;
+    height: 2.5rem;
+    padding: .4rem .8rem;
+    border: 1px solid;
+}
+
+.amount {
+    float: right;
+    width: 1.6rem;
+    height: 1.6rem;
+    text-align: center;
+    border-radius: .25rem;
+    background-color: #23A0F0;
+}

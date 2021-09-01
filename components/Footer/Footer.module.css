@@ -1,0 +1,11 @@
+.footer {
+    height: 4rem;
+    padding: .5rem 0 ;
+    background-color: #0070f3;
+    text-align: center;
+}
+
+.icp img{
+    height: 20px;
+    width: 20px;
+}

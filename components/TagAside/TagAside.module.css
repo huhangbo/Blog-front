@@ -1,0 +1,36 @@
+.aside {
+    margin: .5rem 0;
+    padding: 1rem .5rem;
+    background-color: #ffffff
+}
+
+.title {
+    margin: 0 0 .5rem .6rem;
+    font-size: 1.2rem;
+}
+
+.title span {
+    margin: 0 .5rem;
+}
+
+.box {
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.item {
+    font-size: .9rem;
+    margin: .3rem;
+    padding: .2rem .4rem;
+    border: 1px solid;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.selected {
+    color: #0070f3;
+}

@@ -1,0 +1,14 @@
+.box {
+    margin: 5rem auto;
+    padding: 0 1rem;
+    max-width: 1280px;
+    min-height: calc(100vh - 9rem);
+}
+
+.nav {
+
+}
+
+.content {
+
+}

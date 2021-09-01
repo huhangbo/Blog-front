@@ -1,0 +1,35 @@
+.pagination {
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pre, .next, .item {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 .5rem 0 0;
+    height: 30px;
+    min-width: 30px;
+    line-height: 28px;
+    border: 1px solid;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.pre:hover, .next:hover, .item:hover, .active{
+    color: #23A0F0;
+}
+
+.select {
+    height: 30px;
+    margin: 0 .5rem 0 0;
+}
+
+.limit{
+    cursor: not-allowed;
+    color: #BFBFBF;
+}
+
+.limit:hover{
+    color: #BFBFBF;
+}

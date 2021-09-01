@@ -1,0 +1,34 @@
+.item {
+    margin: 0 0 1.5rem 0;
+    padding: 1rem .75rem;
+    border: 1px solid;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.tag {
+    margin: .5rem 0;
+}
+
+.tag span {
+    margin: .5rem .5rem;
+}
+
+.description {
+    margin: .5rem 0;
+}
+
+.time {
+    margin: .5rem 1.5rem 0 0;
+}
+
+.time::before, .category::before{
+    margin: 0 .5rem 0 0;
+}
+
+.hide {
+    display: none;
+}

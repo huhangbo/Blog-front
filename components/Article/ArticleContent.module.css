@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+}
+
+.center {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.time, .category {
+    margin: 0 1rem;
+    color: #aaa;
+}
+
+.time::before, .category::before{
+    margin: 0 .5rem 0 0;
+}

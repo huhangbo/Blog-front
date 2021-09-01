@@ -1,0 +1,27 @@
+.box {
+    margin: 5rem auto;
+    padding: 0 1rem;
+    max-width: 1280px;
+    display: flex;
+}
+
+.content {
+    margin: 0  .5rem;
+}
+
+.aside {
+    flex: 0 0 250px;
+    margin: 0 .5rem;
+    border-radius: .8rem;
+}
+
+@media screen and (max-width: 481px){
+    .home-aside {
+        display: none;
+    }
+
+    .home-content {
+        width: 95%;
+        margin: 0 auto;
+    }
+}

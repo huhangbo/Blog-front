@@ -1,0 +1,31 @@
+.header {
+    transform: translateX(-100%);
+    z-index: 99;
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+@media screen  and (max-width: 481px) {
+    .hide {
+        transform: translateX(0%);
+    }
+
+    .header .menus {
+        border-top: 2px solid #0070f3;
+        padding: .6rem 0 0 0;
+    }
+
+    .header .item {
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .header span {
+        margin: 0 .8rem;
+    }
+}

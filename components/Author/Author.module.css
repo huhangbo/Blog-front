@@ -1,0 +1,80 @@
+.info {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.avatar {
+    text-align: center;
+    width: auto;
+}
+
+.avatar img {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    transition: transform 1s;
+}
+
+.avatar img:hover {
+    transform:  rotate(360deg);
+}
+
+.name {
+    margin: 1.5rem 0 .6rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.tag {
+    margin: 0 0 1rem 0;
+}
+
+.link {
+    margin: 0 auto;
+}
+
+.link div {
+    display: inline-block;
+    margin: 0 .75rem;
+}
+
+.link div i {
+    font-size: 1.5rem;
+}
+
+.line {
+    margin: 1.2rem auto;
+    height: 0;
+    border: 0.18rem dashed #A4D8FA;
+}
+
+.line::before {
+    position: relative;
+    font-size: 1.5rem;
+    color: #A4D8FA;
+    top: -0.76rem;
+    left: -40%;
+}
+
+.line:hover::before{
+    animation: author-line-move forwards 1s;
+}
+
+.item:hover {
+    transform: scale(1.2);
+}
+
+.qq {
+    color: #23A0F0;
+}
+
+.Wechat {
+    color: #24DB5A;
+}
+
+@keyframes author-line-move {
+    to{
+        left: 40%;
+    }
+}
