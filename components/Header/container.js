@@ -7,9 +7,11 @@ import HeaderMask from "./HeaderMask";
 export default function HeaderContainer () {
     const [menu, setMenu] = useState([])
     const [isHide, setHide] = useState("")
-    useEffect(async () => {
-        const menuResult = await request('get', '/menu')
-        setMenu(menuResult)
+    useEffect( () => {
+        (async function (){
+            const menuResult = await request('get', '/menu')
+            setMenu(menuResult)
+        }) ()
     },[])
     const getHide = () => {
         isHide === "" ? setHide("hide") : setHide("")

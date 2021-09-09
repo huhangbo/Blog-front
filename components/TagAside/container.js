@@ -5,9 +5,11 @@ import TagAside from "./TagAside";
 export default function TagAsideContainer (props) {
     const {selectedId, changeSelectedId} = props
     const [tag, setTag] = useState([])
-    useEffect(async () => {
-        const result = await request('get', '/tag')
-        setTag(result)
+    useEffect( () => {
+        (async function (){
+            const result = await request('get', '/tag')
+            setTag(result)
+        })()
     }, [])
     return (
         <>

@@ -4,9 +4,11 @@ import ResourceAside from "./ResourceAside";
 
 export default function  ResourceAsideContainer () {
     const [resourceCategory, setCategory] = useState([])
-    useEffect(async () => {
-        const result = await request('get', '/resource/category')
-        setCategory(result)
+    useEffect( () => {
+        (async function () {
+            const result = await request('get', '/resource/category')
+            setCategory(result)
+        }) ()
     }, [])
     return (
         <>

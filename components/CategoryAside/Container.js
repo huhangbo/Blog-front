@@ -5,9 +5,11 @@ import CategoryAside from "./CategoryAside";
 export default  function CategoryAsideContainer (props) {
     const {selectedId, changeSelectedId} = props
     const [category, setCategory] = useState([])
-    useEffect(async ()=>{
-        const result = await request('get','/category')
-        setCategory(result)
+    useEffect( ()=>{
+        (async function () {
+            const result = await request('get','/category')
+            setCategory(result)
+        }) ()
     },[])
     return (
         <>
