@@ -35,6 +35,7 @@ export default function Category ({id}) {
 }
 
 export async function getServerSideProps (context) {
+    console.log(context)
     const {id} = context.query
     return {
         props: {

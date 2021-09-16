@@ -70,7 +70,7 @@ export default function Pagination (props){
                     }}
                 >Next
             </span>
-            <select className={styles.select}onChange={() => {changePage({...page, pageSize: event.target.value})}}>
+            <select className={styles.select} onChange={() => {changePage({...page, pageSize: event.target.value})}}>
                 {
                     pageSizeList.map(item => {
                         return (
