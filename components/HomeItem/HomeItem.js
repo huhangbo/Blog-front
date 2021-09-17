@@ -4,7 +4,6 @@ import styles from "./HomeItem.module.css"
 export default function HomeItem (props) {
     const article = props.article
     const title = props.title? props.title : ""
-    console.log(props)
     return (
         <div className={styles.item}>
             <h4 className={styles.title}

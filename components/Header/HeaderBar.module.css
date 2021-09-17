@@ -8,24 +8,28 @@
     width: 250px;
     height: 100%;
     background-color: #ffffff;
+    transition: all .3s;
+}
+
+.menus {
+    border-top: 2px solid #0070f3;
+}
+
+.item {
+    height: 2.5rem;
+    font-size: 1.2rem;
+    margin: .5rem 0 0 0;
+    padding: 0 .8rem;
+    cursor: pointer;
+}
+
+.item span {
+    margin: 0 .8rem;
+    line-height: 2.5rem;
 }
 
 @media screen  and (max-width: 481px) {
     .hide {
         transform: translateX(0%);
-    }
-
-    .header .menus {
-        border-top: 2px solid #0070f3;
-        padding: .6rem 0 0 0;
-    }
-
-    .header .item {
-        height: 40px;
-        font-size: 1.2rem;
-    }
-
-    .header span {
-        margin: 0 .8rem;
     }
 }

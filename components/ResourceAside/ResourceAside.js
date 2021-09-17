@@ -3,7 +3,6 @@ import styles from "./ResourceAside.module.css"
 
 export default function ResourceAside (props) {
     const {resourceCategory} = props
-    console.log(props)
     return (
         <div className={styles.aside}>
             <div className={styles.title}>

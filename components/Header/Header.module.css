@@ -55,19 +55,6 @@
     display: flex;
 }
 
-.item {
-    margin: 0 0 0 1.5rem;
-}
-
-.item i {
-    margin: 0 .25rem;
-}
-
-.item:hover {
-    color: #0070f3;
-    cursor: pointer;
-}
-
 .listIcon {
     display: none;
     width: 1.5rem;
@@ -83,6 +70,35 @@
 .list i {
     font-size: 1.2rem;
 }
+
+.item {
+    margin: 0 0 0 1.5rem;
+    cursor: pointer;
+}
+
+.item i {
+    margin: 0 .25rem;
+}
+
+.item:hover .itemTitle, .item:hover i, .hoverBar span:hover {
+    color: #0070f3;
+}
+
+.item:hover .down::before{
+    transform: rotate(180deg) scale(1.5);
+}
+
+.item:hover .hoverBar {
+    display: flex;
+}
+
+.hoverBar {
+    display: none;
+    background-color: #ffffff;
+    flex-direction: column;
+    text-align: center;
+}
+
 /*平板样式*/
 @media screen and (min-width: 481px) and (max-width:768px) {
     .search input {

@@ -7,7 +7,6 @@ export const InfoContext = createContext({})
 
 export default function MyApp(props) {
   const { Component, pageProps,author, menu, social, category, tag, resourceCategory} = props
-  console.log("page", Component, pageProps, author)
   return (
       <InfoContext.Provider value={{author, menu, social, category, tag, resourceCategory}}>
         <Component {...pageProps} />
@@ -16,7 +15,7 @@ export default function MyApp(props) {
 }
 
 MyApp.getInitialProps = async (appContext) => {
-  // calls page's `getInitialProps` and fills `appProps.pageProps`
+  console.log(appContext.router.route)
   const appProps = await App.getInitialProps(appContext)
   const menu = await request("get", "/menu")
   const author = await request("get", "/author")
