@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import HomeContent from "../../components/HomeContent/HomeContent";
 import HeaderContainer from "../../components/Header/container";
 import styles from "./category.module.css"
 import CategoryAsideContainer from "../../components/CategoryAside/Container";
 import Footer from "../../components/Footer/Footer";
 import MyHead from "../../components/MyHead/MyHead";
-import {request} from "../../utils/request";
+
 
 
 export default function Category ({id}) {
@@ -32,9 +32,5 @@ export default function Category ({id}) {
 
 export async function getServerSideProps (context) {
     const {id} = context.query
-    return {
-        props: {
-            id
-        }
-    }
+    return {props: {id}}
 }
