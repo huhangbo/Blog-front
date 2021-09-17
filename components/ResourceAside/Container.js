@@ -1,15 +1,9 @@
-import {useEffect, useState} from "react";
-import {request} from "../../utils/request";
+import {useContext} from "react";
 import ResourceAside from "./ResourceAside";
+import {InfoContext} from "../../pages/_app";
 
 export default function  ResourceAsideContainer () {
-    const [resourceCategory, setCategory] = useState([])
-    useEffect( () => {
-        (async function () {
-            const result = await request('get', '/resource/category')
-            setCategory(result)
-        }) ()
-    }, [])
+    const {resourceCategory} = useContext(InfoContext)
     return (
         <>
             <ResourceAside resourceCategory = {resourceCategory}/>

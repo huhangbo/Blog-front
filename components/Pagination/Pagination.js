@@ -22,7 +22,6 @@ export default function Pagination (props){
                 arrTmp.push(i)
             }
         }
-        console.log("arr",arrTmp)
         setPageArray(arrTmp)
     },[page, pageAmount])
     function limitChange (pageNum) {

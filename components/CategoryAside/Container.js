@@ -1,16 +1,11 @@
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import {request} from "../../utils/request";
 import CategoryAside from "./CategoryAside";
+import {InfoContext} from "../../pages/_app";
 
 export default  function CategoryAsideContainer (props) {
+    const {category} = useContext(InfoContext)
     const {selectedId, changeSelectedId} = props
-    const [category, setCategory] = useState([])
-    useEffect( ()=>{
-        (async function () {
-            const result = await request('get','/category')
-            setCategory(result)
-        }) ()
-    },[])
     return (
         <>
             <CategoryAside category = {category} selectedId={selectedId} changeSelectedId={changeSelectedId}/>

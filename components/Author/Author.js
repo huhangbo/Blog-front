@@ -1,8 +1,9 @@
-import React from "react";
+import {useContext} from "react";
 import styles from "./Author.module.css"
+import {InfoContext} from "../../pages/_app";
+
 
 export  default  function Author (props) {
-    console.log(props)
     const {author, social} = props
     return (
         <div className={styles.info}>

@@ -1,16 +1,10 @@
-import {useEffect, useState} from "react";
-import {request} from "../../utils/request";
+import {useContext} from "react";
 import TagAside from "./TagAside";
+import {InfoContext} from "../../pages/_app";
 
 export default function TagAsideContainer (props) {
     const {selectedId, changeSelectedId} = props
-    const [tag, setTag] = useState([])
-    useEffect( () => {
-        (async function (){
-            const result = await request('get', '/tag')
-            setTag(result)
-        })()
-    }, [])
+    const {tag} = useContext(InfoContext)
     return (
         <>
             <TagAside tag = {tag} selectedId={selectedId} changeSelectedId={changeSelectedId}/>

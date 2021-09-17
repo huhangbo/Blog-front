@@ -4,20 +4,15 @@ import Head from "next/head";
 import React, {useEffect, useState} from "react";
 import ArticleContent from "../../components/Article/ArticleContent";
 import ArticleNav from "../../components/Article/ArticleNav";
+import MyHead from "../../components/MyHead/MyHead";
 import {request} from "../../utils/request";
 import styles from "./article.module.css"
 
 
+const highlight = <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet"/>
 export default function Article({article}) {
-    // const {id} = useRouter().query
-    // const [article, setArticle] = useState({})
-    // useEffect(async () => {
-    //     const result = await request('get',`/article/${id}`)
-    //     setArticle(result)
-    // }, [])
 
-    const a = `
-一键安装&部署的React 搭建的博客，解放双手让你只需要更改配置文件即拥有一个完美的个人技术博客！
+    const a = `一键安装&部署的React 搭建的博客，解放双手让你只需要更改配置文件即拥有一个完美的个人技术博客！
 
 本仓库包含以下内容：
 
@@ -426,21 +421,18 @@ React-blog 遵循 [Contributor Covenant](http://contributor-covenant.org/version
 ## 使用许可
 
 [MIT](LICENSE) © Richard Littauer
+
 `
     return (
         <>
-            <Head>
-                <link rel="stylesheet" href="http://at.alicdn.com/t/font_2714836_00o44fd31dzwg.css"/>
-                <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet"/>
-                <title>Home</title>
-            </Head>
+            <MyHead title={article.title} content={highlight}/>
             <HeaderContainer/>
             <div className={styles.box}>
                 <div className={styles.content}>
                     <ArticleContent article = {article} a={a}/>
                 </div>
                 <div className={styles.nav}>
-                    <ArticleNav detail= {article.detail} a={a}/>
+                    <ArticleNav content= {article.content} a={a}/>
                 </div>
             </div>
         </>
@@ -449,6 +441,6 @@ React-blog 遵循 [Contributor Covenant](http://contributor-covenant.org/version
 
 export async function getServerSideProps (context) {
     const {id} = context.query
-    const article = await request('get',`/article/${id}`)
-    return { props: { article } }
+    const article = await request("get", `/article/${id}`)
+    return {props: {article: article}}
 }

@@ -6,6 +6,7 @@ import TagAsideContainer from "../../components/TagAside/container";
 import HeaderContainer from "../../components/Header/container";
 import HomeContent from "../../components/HomeContent/HomeContent";
 import Footer from "../../components/Footer/Footer";
+import MyHead from "../../components/MyHead/MyHead";
 
 
 export default function Tag() {
@@ -16,10 +17,7 @@ export default function Tag() {
     }
     return (
         <>
-            <Head>
-                <link rel="stylesheet" href="http://at.alicdn.com/t/font_2714836_00o44fd31dzwg.css"/>
-                <title>Tag</title>
-            </Head>
+            <MyHead title={"tag"}/>
             <HeaderContainer/>
             <div className={styles.box}>
                 <div className={styles.nav}>

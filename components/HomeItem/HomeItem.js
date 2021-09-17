@@ -8,7 +8,7 @@ export default function HomeItem (props) {
     return (
         <div className={styles.item}>
             <h4 className={styles.title}
-                onClick={() => Router.push(`article/${article.article_id}`)}>
+                onClick={() => Router.push(`/article/${article.article_id}`)}>
                 {article.title}
             </h4>
             <div className={`iconfont icon-tag ${styles.tag} ${title === "tag" ? styles.hide : ''}`}>
