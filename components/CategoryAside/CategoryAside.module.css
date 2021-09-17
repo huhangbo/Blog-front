@@ -19,6 +19,7 @@
     box-shadow: 0 1px 2px #888888;
     border-radius: .25rem;
     cursor: pointer;
+    transition: all .3s;
 }
 
 .item:hover {
@@ -35,7 +36,9 @@
     float: right;
     width: 2.5rem;
     height: 100%;
+    overflow: hidden;
 }
+
 
 .img img {
     width: 100%;

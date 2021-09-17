@@ -2,6 +2,7 @@
     margin: 0 0 1.5rem 0;
     padding: 1rem .75rem;
     border: 1px solid;
+    animation: moveIn 0.5s forwards;
 }
 
 .title {
@@ -31,4 +32,17 @@
 
 .hide {
     display: none;
+}
+
+.title, .tag span, .description, .category {
+    cursor: pointer;
+}
+
+@keyframes moveIn {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

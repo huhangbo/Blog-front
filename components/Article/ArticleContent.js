@@ -1,5 +1,5 @@
 import marked from "marked";
-import hljs from "highlight.js";
+import highlight from "highlight.js";
 import {useEffect} from "react";
 import styles from "./ArticleContent.module.css"
 import Router from "next/router";
@@ -19,7 +19,7 @@ export default function ArticleContent(props) {
                 smartLists: true,
                 smartypants: false,
                 highlight: function(code) {
-                    return hljs.highlightAuto(code).value;
+                    return highlight.highlightAuto(code).value;
                 },
             })
         }, [])

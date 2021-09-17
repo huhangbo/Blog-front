@@ -3,6 +3,7 @@
     padding: 0 1rem;
     max-width: 1280px;
     display: flex;
+    animation: fadeIn .5s forwards;
 }
 
 .content {
@@ -19,9 +20,17 @@
     .aside {
         display: none;
     }
-
     .content {
         width: 95%;
         margin: 0 auto;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

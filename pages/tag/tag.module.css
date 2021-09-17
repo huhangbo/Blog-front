@@ -1,8 +1,8 @@
 .box {
-    margin: 5rem auto;
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 5rem 1rem;
     max-width: 1280px;
-    min-height: calc(100vh - 9rem);
+    min-height: calc(100vh - 4rem);
 }
 
 .nav {

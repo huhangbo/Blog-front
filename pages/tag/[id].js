@@ -1,5 +1,4 @@
 import {useRouter} from "next/router";
-import Head from "next/head";
 import React, {useState} from "react";
 import styles from "./tag.module.css"
 import TagAsideContainer from "../../components/TagAside/container";
