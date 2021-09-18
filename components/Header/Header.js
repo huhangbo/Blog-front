@@ -28,14 +28,14 @@ export default function  Header (props) {
                     {
                         menu.map((item) =>{
                             return (
-                                <li className={styles.item} key={item.title} onClick={() => Router.push(item.url)}>
+                                <li className={styles.item} key={item.title} onClick={()=>{if(item.children){} else return Router.push(item.url)}}>
                                     <i className={"iconfont "+item.icon}></i>
                                     <span className={styles.itemTitle}>{item.title}</span>
                                     {item.children && <>
                                     <i className={`iconfont icon-down ${styles.down}`}></i>
                                     <div className={styles.hoverBar}>
                                         {item.children.map(child =>
-                                            <span key={child.title} onClick={()=> Router.push(`${item.url}/${child.category_id || child.tag_id}`)}>
+                                            <span key={child.title} onClick={()=>Router.push(`${item.url}/${child.category_id || child.tag_id}`)}>
                                                 {child.title}
                                             </span>)
                                         }

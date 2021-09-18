@@ -39,6 +39,11 @@
     cursor: pointer;
 }
 
+
+.description {
+    color: #777;
+}
+
 @keyframes moveIn {
     0% {
         transform: translateX(-150%);

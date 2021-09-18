@@ -21,9 +21,9 @@ export default function CategoryAside (props) {
                     return (
                         <div className={`${styles.item} ${item.category_id == selectedId ? styles.selected : ""}`} key={item.category_id}
                              onClick={()=>{switchCategory(item.category_id)}}>
-                            <span>{item.title}</span>
-                            <div className={styles.img}>
-                                <img src={item.icon}/>
+                            <span className={styles.itemTitle}>{item.title}</span>
+                            <div className={styles.amount}>
+                                {item.amount}
                             </div>
                         </div>
                     )
