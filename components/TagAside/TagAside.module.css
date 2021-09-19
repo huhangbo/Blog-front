@@ -19,10 +19,11 @@
 }
 
 .item {
-    font-size: .9rem;
+    font-size: 1rem;
+    font-weight: 700;
     margin: .3rem;
     padding: .2rem .4rem;
-    border: 1px solid;
+    border: .1rem solid;
     border-radius: .25rem;
     cursor: pointer;
 }

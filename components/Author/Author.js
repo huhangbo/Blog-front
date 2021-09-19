@@ -1,6 +1,5 @@
-import {useContext} from "react";
 import styles from "./Author.module.css"
-import {InfoContext} from "../../pages/_app";
+
 
 
 export  default  function Author (props) {

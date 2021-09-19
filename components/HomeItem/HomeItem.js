@@ -14,7 +14,7 @@ export default function HomeItem (props) {
                 {
                     article.tag.map(item => {
                         return (
-                            <span key = {item.tag_id}
+                            <span key = {item.tag_id} style={{color: item.color}}
                                   onClick={() => Router.push(`/tag/${item.tag_id}`)}
                             >
                                 {item.tag_title}
