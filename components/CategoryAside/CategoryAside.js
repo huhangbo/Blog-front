@@ -19,9 +19,9 @@ export default function CategoryAside (props) {
             {
                 category.map(item => {
                     return (
-                        <div className={`${styles.item} ${item == selectedId ? styles.selected : ""}`} key={item}
-                             onClick={()=>{switchCategory(item)}}>
-                            <span className={styles.itemTitle}>{item}</span>
+                        <div className={`${styles.item} ${item.title == selectedId ? styles.selected : ""}`} key={item.title}
+                             onClick={()=>{switchCategory(item.title)}}>
+                            <span className={styles.itemTitle}>{item.title}</span>
                             <div className={styles.amount}>
                                 {item.amount}
                             </div>
