@@ -6,10 +6,10 @@ import {InfoContext} from "../../pages/_app";
 import ResourceAside from "../ResourceAside/ResourceAside";
 
 export default function HomeAside() {
-    const {author, social} = useContext(InfoContext)
+    const {author} = useContext(InfoContext)
     return (
         <>
-            <Author author={author} social={social}/>
+            <Author author={author} social={author.social}/>
             <div style={{position: "sticky", top: "3.6rem",}}>
             <CategoryAsideContainer/>
             <TagAsideContainer/>

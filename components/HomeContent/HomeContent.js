@@ -3,7 +3,6 @@ import {request} from "../../utils/request";
 import HomeList from "./HomeList";
 import Pagination from "../Pagination/Pagination";
 
-
 export default function HomeContent (props) {
     const [articles, setArticles] = useState([])
     const [page, setPage] = useState({currentPage: 1, pageSize: 5})

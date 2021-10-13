@@ -20,10 +20,9 @@ export default function TagAside (props) {
                 {
                     tag.map(item => {
                         return (
-                            <div className={`${styles.item} ${item.tag_id == selectedId ? styles.selected : ''}`}
-                                 key={item.tag_id} style={{color: item.color}}
-                                 onClick={() => {switchTag(item.tag_id)}}>
-                                {item.title}
+                            <div className={`${styles.item} ${item == selectedId ? styles.selected : ''}`}
+                                 key={item} onClick={() => {switchTag(item)}}>
+                                {item}
                             </div>
                         )
                     })

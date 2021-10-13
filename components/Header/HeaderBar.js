@@ -7,12 +7,12 @@ import {InfoContext} from "../../pages/_app";
 
 
 export default function HeaderBar(props) {
-    const {social, author} = useContext(InfoContext)
+    const {author} = useContext(InfoContext)
     const {menu} = props
     const {isHide} = props
     return (
         <div className={`${styles.header} ${styles[isHide]}`}>
-            <Author social={social} author={author}/>
+            <Author author={author}/>
             <ul className={styles.menus}>
             {
                 menu.map((item) =>{

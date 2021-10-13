@@ -6,15 +6,15 @@ import HeaderMask from "./HeaderMask";
 import {InfoContext} from "../../pages/_app";
 
 export default function HeaderContainer () {
-    const {menu} = useContext(InfoContext)
+    const {author} = useContext(InfoContext)
     const [isHide, setHide] = useState("")
     const getHide = () => {
         isHide === "" ? setHide("hide") : setHide("")
     }
     return (
         <header>
-            <Header menu={menu} getHide={getHide}/>
-            <HeaderBar menu={menu} isHide={isHide}/>
+            <Header menu={author.menu} getHide={getHide}/>
+            <HeaderBar menu={author.menu} isHide={isHide}/>
             <HeaderMask isHide={isHide} getHide={getHide}/>
         </header>
     )

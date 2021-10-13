@@ -19,13 +19,15 @@
 }
 
 .item {
-    font-size: 1rem;
-    font-weight: 700;
     margin: .3rem;
+    color: #1890ff;
+    background-color: #e6f7ff;
+    border: .1rem solid #91d5ff;
     padding: .2rem .4rem;
-    border: .1rem solid;
     border-radius: .25rem;
     cursor: pointer;
+    height: 1.8rem;
+    line-height: 1.1rem;
 }
 
 .item:hover {

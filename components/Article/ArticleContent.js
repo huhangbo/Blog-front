@@ -28,7 +28,7 @@ export default function ArticleContent(props) {
             <h1 className={styles.title}>{article.title}</h1>
             <div className={styles.center}>
                 <span className={`${styles.time} iconfont icon-time`}>{article.publish_time}</span>
-                <span className={`${styles.category} iconfont icon-category`}  onClick={() => Router.push(`/category/${article.category_id}`)}>{article.category_title}</span>
+                <span className={`${styles.category} iconfont icon-category`}  onClick={() => Router.push(`/category/${article.category}`)}>{article.category}</span>
             </div>
             <div
                 className="markdown-body"

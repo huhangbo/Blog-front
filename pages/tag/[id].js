@@ -8,8 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import MyHead from "../../components/MyHead/MyHead";
 
 
-export default function Tag() {
-    const {id} = useRouter().query
+export default function Tag({id}) {
     const [selectedId, setSelectedId] = useState(id)
     function changeSelectedId (selectedId) {
         setSelectedId(selectedId)
@@ -33,9 +32,5 @@ export default function Tag() {
 
 export async function getServerSideProps (context) {
     const {id} = context.query
-    return {
-        props: {
-            id
-        }
-    }
+    return {props: {id}}
 }

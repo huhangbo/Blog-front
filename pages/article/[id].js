@@ -7,6 +7,7 @@ import ArticleNav from "../../components/Article/ArticleNav";
 import MyHead from "../../components/MyHead/MyHead";
 import {request} from "../../utils/request";
 import styles from "./article.module.css"
+import Footer from "../../components/Footer/Footer";
 
 
 const highlight = <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet"/>
@@ -435,6 +436,7 @@ React-blog 遵循 [Contributor Covenant](http://contributor-covenant.org/version
                     <ArticleNav content= {article.content} a={a}/>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

@@ -1,7 +1,7 @@
 .footer {
     height: 4rem;
     padding: .5rem 0 ;
-    background-color: #0070f3;
+    background-image: linear-gradient(to right,#74ebd5,#ACB6E5);
     text-align: center;
 }
 
